@@ -9,7 +9,8 @@
         .button-container {
             display: flex;
             gap: 20px; /* Adds space between buttons */
-            margin-top: s20px;
+            margin-top: 20px;
+            flex-wrap: wrap;
         }
 
         .button-container a button {
@@ -40,19 +41,42 @@
             background-color: #d56700; /* Darker Orange */
         }
 
-        /* Hashed Art Button Style */
+        /* Button 3 Style (Hashed Art) */
         .button-container .btn-hashedart {
-            background-color: #9b59b6; /* Purple color */
+            background-color: #9b59b6; /* Purple */
         }
 
         .button-container .btn-hashedart:hover {
             background-color: #8e44ad; /* Darker Purple */
         }
+
+        /* Button style for skills */
+        .skills-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-top: 20px;
+        }
+
+        .skills-container .skill-button {
+            background-color: #3498db; /* Blue color */
+            color: white;
+            padding: 10px 20px;
+            border-radius: 5px;
+            border: none;
+            cursor: pointer;
+            font-size: 14px;
+            transition: background-color 0.3s ease;
+        }
+
+        .skills-container .skill-button:hover {
+            background-color: #2980b9; /* Darker Blue */
+        }
     </style>
 </head>
 <body>
     <h1>LUKE WINDIGHA BONAIZE</h1>
-    <p>Denver, CO | <a href="tel:+17206758184">Call Me</a><br>
+    <p>Denver, CO | <a href="tel:+17202612315">(720) 261-2315</a><br>
     <a href="mailto:luke.bonaize@alumni.du.edu">Email</a> | 
     <a href="https://linkedin.com/in/lbonaize" target="_blank">Linkedin</a> | 
     <a href="https://mypag.io/windigha" target="_blank">My Page</a></p>
@@ -62,20 +86,26 @@
     A positive and inventive mindset that questions the status quo to achieve innovation and success</p>
 
     <h2>SKILLS & APPLICATIONS</h2>
-    <ul>
-        <li>System Thinking</li>
-        <li>Customer Service</li>
-        <li>Procore | Textura</li>
-        <li>HubSpot | Airtable</li>
-        <li>Database Management</li>
-        <li>Team Building</li>
-        <li>AWS | Office</li>
-        <li>DialPad | Avaya</li>
-        <li>Task Delegation</li>
-        <li>Negotiation</li>
-        <li>Google Suite</li>
-        <li>Slack</li>
-    </ul>
+    <div class="skills-container">
+        <button class="skill-button">System Thinking</button>
+        <button class="skill-button">Customer Service</button>
+        <button class="skill-button">Procore</button>
+        <button class="skill-button">Textura</button>
+        <button class="skill-button">HubSpot</button>
+        <button class="skill-button">Airtable</button>
+        <button class="skill-button">Database Management</button>
+        <button class="skill-button">Team Building</button>
+        <button class="skill-button">AWS</button>
+        <button class="skill-button">Office</button>
+        <button class="skill-button">DialPad</button>
+        <button class="skill-button">Avaya</button>
+        <button class="skill-button">Task Delegation</button>
+        <button class="skill-button">Negotiation</button>
+        <button class="skill-button">Google Suite</button>
+        <button class="skill-button">Slack</button>
+        <button class="skill-button">Github</button>
+        <button class="skill-button">Elestio</button>
+    </div>
 
     <h2>RELEVANT EXPERIENCE</h2>
     <h3>Bolark Consulting - Remote - Denver, CO</h3>
