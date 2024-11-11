@@ -4,12 +4,58 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Resume - Luke W. Bonaize</title>
+    <style>
+        /* Style for buttons to appear side by side and add colors */
+        .button-container {
+            display: flex;
+            gap: 20px; /* Adds space between buttons */
+            margin-top: s20px;
+        }
+
+        .button-container a button {
+            padding: 15px 30px;
+            font-size: 16px;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        /* Button 1 Style */
+        .button-container .btn-africangrocery {
+            background-color: #4CAF50; /* Green */
+        }
+
+        .button-container .btn-africangrocery:hover {
+            background-color: #45a049; /* Darker Green */
+        }
+
+        /* Button 2 Style */
+        .button-container .btn-strictlyvc {
+            background-color: #e47200; /* Orange */
+        }
+
+        .button-container .btn-strictlyvc:hover {
+            background-color: #d56700; /* Darker Orange */
+        }
+
+        /* Hashed Art Button Style */
+        .button-container .btn-hashedart {
+            background-color: #9b59b6; /* Purple color */
+        }
+
+        .button-container .btn-hashedart:hover {
+            background-color: #8e44ad; /* Darker Purple */
+        }
+    </style>
 </head>
 <body>
     <h1>LUKE WINDIGHA BONAIZE</h1>
-    <p>Denver, CO | (720) 261-2315<br>
-    <a href="mailto:luke.bonaize@alumni.du.edu">luke.bonaize@alumni.du.edu</a> | 
-    <a href="https://linkedin.com/in/lbonaize" target="_blank">linkedin.com/in/lbonaize</a></p>
+    <p>Denver, CO | <a href="tel:+17206758184">Call Me</a><br>
+    <a href="mailto:luke.bonaize@alumni.du.edu">Email</a> | 
+    <a href="https://linkedin.com/in/lbonaize" target="_blank">Linkedin</a> | 
+    <a href="https://mypag.io/windigha" target="_blank">My Page</a></p>
 
     <h2>SUMMARY OF QUALIFICATIONS</h2>
     <p>Results-driven professional with experience optimizing processes, exceeding KPIs, and leading high-functioning teams.<br>
@@ -32,7 +78,6 @@
     </ul>
 
     <h2>RELEVANT EXPERIENCE</h2>
-
     <h3>Bolark Consulting - Remote - Denver, CO</h3>
     <p><strong>Tax Preparer / Office Assistant</strong> | January 2024 – Present</p>
     <ul>
@@ -100,5 +145,12 @@
         <li>Beta Gamma Nu Fraternity Inc</li>
         <li>Soccer</li>
     </ul>
+
+    <!-- Side Project Buttons -->
+    <div class="button-container">
+        <a href="https://www.africangrocerystores.com" target="_blank"><button class="btn-africangrocery">African Grocery Stores</button></a>
+        <a href="https://www.strictlyvcfunded.com" target="_blank"><button class="btn-strictlyvc">Strictly VC Funded</button></a>
+        <a href="https://www.teepublic.com/user/hashed-art" target="_blank"><button class="btn-hashedart">Hashed Art</button></a>
+    </div>
 </body>
 </html>
