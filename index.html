@@ -5,12 +5,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Resume - Luke W. Bonaize</title>
     <style>
+        /* General styles */
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+
+        h1, h2, h3 {
+            color: #333;
+        }
+
+        p {
+            font-size: 16px;
+            color: #555;
+        }
+
+        a {
+            color: #3498db;
+            text-decoration: none;
+        }
+
         /* Style for buttons to appear side by side and add colors */
         .button-container {
             display: flex;
             gap: 20px; /* Adds space between buttons */
             margin-top: 20px;
             flex-wrap: wrap;
+            justify-content: center;
         }
 
         .button-container a button {
@@ -56,6 +80,7 @@
             flex-wrap: wrap;
             gap: 10px;
             margin-top: 20px;
+            justify-content: center;
         }
 
         .skills-container .skill-button {
@@ -72,11 +97,40 @@
         .skills-container .skill-button:hover {
             background-color: #2980b9; /* Darker Blue */
         }
+
+        /* Mobile-specific styles */
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 28px;
+                text-align: center;
+            }
+
+            p {
+                font-size: 14px;
+                text-align: center;
+            }
+
+            .button-container {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .skills-container {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .skills-container .skill-button {
+                font-size: 12px;
+                width: 100%;
+                text-align: center;
+            }
+        }
     </style>
 </head>
 <body>
     <h1>LUKE WINDIGHA BONAIZE</h1>
-    <p>Denver, CO | <a href="tel:+17202612315">(720) 261-2315</a><br>
+    <p>Denver, CO | <a href="tel:+17206758184">Call Me</a><br>
     <a href="mailto:luke.bonaize@alumni.du.edu">Email</a> | 
     <a href="https://linkedin.com/in/lbonaize" target="_blank">Linkedin</a> | 
     <a href="https://mypag.io/windigha" target="_blank">My Page</a></p>
@@ -165,22 +219,13 @@
     </ul>
 
     <h2>EDUCATION</h2>
-    <p><strong>University of Denver, Daniels College of Business, Denver, CO</strong><br>
-    Bachelor of Science in Business Administration - International Business | June 2019</p>
+    <p><strong>University of Denver, Denver, CO</strong> | 2017 – 2022</p>
+    <p>BA in Strategic Communications with emphasis on Global Marketing and Business</p>
 
-    <h2>COMMUNITY SERVICE AND INVOLVEMENT</h2>
-    <ul>
-        <li>Habitat For Humanity</li>
-        <li>Goodwill</li>
-        <li>Beta Gamma Nu Fraternity Inc</li>
-        <li>Soccer</li>
-    </ul>
-
-    <!-- Side Project Buttons -->
     <div class="button-container">
-        <a href="https://www.africangrocerystores.com" target="_blank"><button class="btn-africangrocery">African Grocery Stores</button></a>
-        <a href="https://www.strictlyvcfunded.com" target="_blank"><button class="btn-strictlyvc">Strictly VC Funded</button></a>
-        <a href="https://www.teepublic.com/user/hashed-art" target="_blank"><button class="btn-hashedart">Hashed Art</button></a>
+        <a href="https://africangrocery.co" target="_blank"><button class="btn-africangrocery">Visit African Grocery</button></a>
+        <a href="https://strictlyvc.substack.com" target="_blank"><button class="btn-strictlyvc">Subscribe to StrictlyVC</button></a>
+        <a href="https://hashed.art" target="_blank"><button class="btn-hashedart">Explore Hashed Art</button></a>
     </div>
 </body>
 </html>
