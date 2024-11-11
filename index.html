@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Professional CV</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            max-width: 800px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+            line-height: 1.5;
+        }
+
+        .header {
+            border-bottom: 2px solid #000;
+            padding-bottom: 1rem;
+            margin-bottom: 2rem;
+        }
+
+        .name {
+            font-size: 2rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .job-title {
+            color: #28a745;
+            font-size: 1.2rem;
+            margin-bottom: 1rem;
+        }
+
+        .contact-info {
+            margin-bottom: 1rem;
+        }
+
+        .section-title {
+            color: #28a745;
+            margin: 1.5rem 0 1rem 0;
+            font-size: 1.3rem;
+        }
+
+        .skills-list {
+            margin-bottom: 1rem;
+        }
+
+        .education-item, .experience-item {
+            margin-bottom: 1.5rem;
+        }
+
+        .institution-name {
+            color: #007bff;
+            font-weight: bold;
+        }
+
+        .date-range {
+            color: #666;
+            margin: 0.5rem 0;
+        }
+
+        .achievements-list {
+            margin-left: 1.5rem;
+            margin-top: 0.5rem;
+        }
+
+        .skills-section {
+            margin-top: 0.5rem;
+            color: #666;
+        }
+
+        @media (max-width: 600px) {
+            body {
+                margin: 1rem;
+            }
+            
+            .name {
+                font-size: 1.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1 class="name">Your Name</h1>
+        <div class="job-title">Junior Frontend Developer</div>
+        <div class="contact-info">
+            123 Your Street<br>
+            Your City, ST 12345<br>
+            (123) 456-7890<br>
+            no_reply@example.com
+        </div>
+    </div>
+
+    <section>
+        <h2 class="section-title">Skills</h2>
+        <div class="skills-list">
+            HTML, CSS, JavaScript, Accessibility, Figma to Design, Responsive Web Design, Technical Writing, Presentation
+        </div>
+    </section>
+
+    <section>
+        <h2 class="section-title">Education</h2>
+        <div class="education-item">
+            <div class="institution-name">School Name, Location - Degree</div>
+            <div class="date-range">Month 20xx to Month 20xx</div>
+            <div>List of exciting things you did at university</div>
+        </div>
+    </section>
+
+    <section>
+        <h2 class="section-title">Experience</h2>
+        <div class="experience-item">
+            <div class="institution-name">Company Name, Location - Job Title</div>
+            <div class="date-range">Month 20xx to Month 20xx</div>
+            <ul class="achievements-list">
+                <li>List of achievements</li>
+                <li>List of achievements</li>
+                <li>List of achievements</li>
+            </ul>
+            <div class="skills-section">
+                Skills: List of skills used or gained at this company
+            </div>
+        </div>
+
+        <div class="experience-item">
+            <div class="institution-name">Company Name, Location - Job Title</div>
+            <div class="date-range">Month 20xx to Month 20xx</div>
+            <ul class="achievements-list">
+                <li>List of achievements</li>
+                <li>List of achievements</li>
+            </ul>
+        </div>
+    </section>
+</body>
+</html>
