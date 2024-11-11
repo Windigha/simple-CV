@@ -74,30 +74,6 @@
             background-color: #8e44ad; /* Darker Purple */
         }
 
-        /* Button style for skills */
-        .skills-container {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 10px;
-            margin-top: 20px;
-            justify-content: center;
-        }
-
-        .skills-container .skill-button {
-            background-color: #3498db; /* Blue color */
-            color: white;
-            padding: 10px 20px;
-            border-radius: 5px;
-            border: none;
-            cursor: pointer;
-            font-size: 14px;
-            transition: background-color 0.3s ease;
-        }
-
-        .skills-container .skill-button:hover {
-            background-color: #2980b9; /* Darker Blue */
-        }
-
         /* Mobile-specific styles */
         @media (max-width: 768px) {
             h1 {
@@ -118,6 +94,7 @@
             .skills-container {
                 flex-direction: column;
                 align-items: center;
+                display: none; /* Hide skills section on mobile */
             }
 
             .skills-container .skill-button {
@@ -125,7 +102,22 @@
                 width: 100%;
                 text-align: center;
             }
+
+            /* Hide elements on mobile */
+            h2, h3, ul {
+                display: none;
+            }
+
+            .button-container {
+                display: none;
+            }
         }
+
+        /* Hidden Section: How to Add New Experience */
+        .hidden-section {
+            display: none;
+        }
+
     </style>
 </head>
 <body>
@@ -213,14 +205,26 @@
     <h3>Gary Leimer Inc - Denver, CO</h3>
     <p><strong>Warehouse Manager</strong> | November 2018 – November 2020</p>
     <ul>
-        <li>Introduced a delivery and receiving workflow that improved accuracy</li>
-        <li>Created location tags and labels to reduce material loss and improve pick times</li>
-        <li>Installed GPS trackers in high-value tools and equipment to prevent loss</li>
+        <li>Introduced processes to optimize inventory accuracy</li>
+        <li>Tracked deliveries and ensured products met safety standards</li>
+        <li>Managed and monitored delivery schedules for projects</li>
     </ul>
 
     <h2>EDUCATION</h2>
-    <p><strong>University of Denver, Denver, CO</strong> | 2017 – 2022</p>
+    <p><strong>University of Colorado Boulder</strong> | 2017 – 2022</p>
     <p>BA in Strategic Communications with emphasis on Global Marketing and Business</p>
+
+    <!-- Hidden Section on How to Add New Experience -->
+    <div class="hidden-section">
+        <h2>How to Add a New Experience</h2>
+        <p>To add a new experience, follow these steps:</p>
+        <ul>
+            <li>Click on the "Add Experience" button located at the top of the page.</li>
+            <li>Fill in the company name, job title, and employment dates.</li>
+            <li>Include key responsibilities and accomplishments in the experience section.</li>
+            <li>Click "Save" to add the experience to your profile.</li>
+        </ul>
+    </div>
 
     <div class="button-container">
         <a href="https://africangrocery.co" target="_blank"><button class="btn-africangrocery">Visit African Grocery</button></a>
